@@ -1,0 +1,115 @@
+/* ./src/css/tailwind.css */
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+    logs: false;
+    theme: light --default, dark --prefersdark;
+    prefix: "dui-"
+}
+
+@theme {
+    --font-roboto: "Roboto Condensed", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+}
+
+@layer base {
+    
+}
+
+@utility no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@utility text-link {
+    @apply hover:underline hover:text-fuchsia-600 hover:cursor-pointer hover:font-bold
+}
+
+@utility text-monetary {
+    @apply text-right tabular-nums;
+}
+
+@utility flex-center {
+    @apply flex items-center justify-center;
+}
+
+@utility flex-around {
+    @apply flex items-center justify-around;
+}
+
+@utility flex-between {
+    @apply flex items-center justify-between;
+}
+
+@utility inspect {
+    @apply border-2 border-red-600;
+}
+
+@utility text-xs-responsive {
+    font-size: min(10vw, var(--text-xs));
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+}
+
+@utility text-sm-responsive {
+    font-size: min(10vw, var(--text-sm));
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+@utility text-base-responsive {
+    font-size: min(10vw, var(--text-base));
+    line-height: var(--tw-leading, var(--text-base--line-height));
+}
+
+@utility text-lg-responsive {
+    font-size: min(10vw, var(--text-lg));
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+
+@utility text-xl-responsive {
+    font-size: min(10vw, var(--text-xl));
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+
+@utility text-2xl-responsive {
+    font-size: min(10vw, var(--text-2xl));
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+@utility text-3xl-responsive {
+    font-size: min(10vw, var(--text-3xl));
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+
+@utility text-4xl-responsive {
+    font-size: min(10vw, var(--text-4xl));
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+
+@utility text-5xl-responsive {
+    font-size: min(10vw, var(--text-5xl));
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+
+@utility text-6xl-responsive {
+    font-size: min(10vw, var(--text-6xl));
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+}
+
+@utility text-7xl-responsive {
+    font-size: min(10vw, var(--text-7xl));
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+}
+
+@utility text-8xl-responsive {
+    font-size: min(10vw, var(--text-8xl));
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+}
+
+@utility text-9xl-responsive {
+    font-size: min(10vw, var(--text-9xl));
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+}

@@ -1,0 +1,41 @@
+{
+    "name": "web-86md",
+    "version": "1.0.0",
+    "description": "Python-fastHTML Alpine Tailwind HTMX [PATH] stacks web development kit",
+    "keywords": [
+        "Python-fastHTML",
+        "AlpineJS",
+        "TailwindCSS",
+        "HTMX",
+        "w86md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VRaymondCS/w86md.git"
+    },
+    "license": "ISC",
+    "author": "Raymond Calsen",
+    "main": "webpack.mix.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "mix": "npx mix",
+        "wtc": "npx mix watch"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.13",
+        "laravel-mix": "^6.0.49",
+        "prettier": "^3.6.2",
+        "prettier-plugin-jinja-template": "^2.1.0",
+        "prettier-plugin-tailwindcss": "^0.6.14"
+    },
+    "dependencies": {
+        "@tailwindcss/typography": "^0.5.16",
+        "alpinejs": "^3.15.0",
+        "daisyui": "^5.1.12",
+        "datatables.net-dt": "^2.3.4",
+        "highcharts": "^12.4.0",
+        "htmx.org": "^2.0.7",
+        "lucide": "^0.544.0",
+        "tailwindcss": "^4.1.13"
+    }
+}

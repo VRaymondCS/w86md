@@ -1,0 +1,22 @@
+{
+    "plugins": [
+        "prettier-plugin-jinja-template",
+        "prettier-plugin-tailwindcss"
+    ],
+    "tailwindStylesheet": "./dist/css/app.css",
+    "bracketSameLine": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "semi": false,
+    "quoteProps": "as-needed",
+    "bracketSpacing": true,
+    "endOfLine": "crlf",
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "jinja-template"
+            }
+        }
+    ]
+}

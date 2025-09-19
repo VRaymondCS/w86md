@@ -1,0 +1,15 @@
+# ./.gitignore
+
+# Python cache
+.mypy_cache/
+**/__pycache__/
+
+# Build artifacts
+/dist/
+
+# Dependency directory
+node_modules/
+package-lock.json
+
+# FastHTML Session
+.sesskey

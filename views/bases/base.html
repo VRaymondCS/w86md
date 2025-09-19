@@ -1,0 +1,27 @@
+<!-- start of ./views/bases/base.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/app.css" />
+        <script src="/js/app.js"></script>
+        <title>{{ ctx.tabname }} - {{ ctx.webpage }}</title>
+    </head>
+    <body class="bg-gradient-to-b from-slate-300 to bg-slate-700 h-screen overflow-hidden flex-center flex-col">
+        <main class="flex grow">
+            {{ ctx.headers }}
+        </main>
+        <footer
+            class="font-mono text-white text-sm px-2 flex w-screen justify-between bg-slate-700">
+            <div
+                class="sm:after:content-['sm'] md:after:content-['md'] lg:after:content-['lg'] xl:after:content-['xl'] 2xl:after:content-['2xl'] after:content-['xs']">
+                Web {{ ctx.webpage }} Ver. {{ ctx.version }} - VW:
+            </div>
+            <div></div>
+            <div>&copy; Raymond - {{ ctx.devYear }}</div>
+        </footer>
+        {% block script %}{# script section #}{% endblock script %}
+    </body>
+</html>
+<!-- end of ./views/bases/base.html -->
